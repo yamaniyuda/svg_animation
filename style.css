@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2C3333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  width: 40%;
+  height: 40%;
+}
+
+svg .name-text {
+  stroke: aliceblue;
+  stroke-width: 1px;
+  stroke-dasharray: 230;
+  fill: transparent;
+  stroke-dashoffset: 0;
+  animation: name-text 2s linear forwards;
+}
+
+svg .line {
+  stroke: aliceblue;
+  stroke-width: 1px;
+  stroke-dasharray: 210;
+  stroke-dashoffset: 0;
+  animation: line 2s linear forwards;
+}
+
+@keyframes name-text {
+  0% {
+    stroke-dashoffset: 230;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes line {
+  0% {
+    stroke-dashoffset: 210;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
